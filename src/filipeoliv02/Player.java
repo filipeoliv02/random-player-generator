@@ -5,11 +5,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
+import static filipeoliv02.Utils.randomNumberGenerator;
+import static filipeoliv02.Utils.randomNumberGeneratorDouble;
 
 public class Player {
     public String name;
     public String country;
     public int age;
+    public int bodyType;
     public double height;
     public double weight;
     public String favoritefoot;
@@ -19,11 +22,19 @@ public class Player {
     public Player(String namesPath, int numberOfNames, String surnamesPath, int numberOfSurnames, String countriesPath, int numberOfCountries) {
         this.name = nameGenerator(namesPath, numberOfNames) + " " + nameGenerator(surnamesPath, numberOfSurnames);
         this.country = nameGenerator(countriesPath, numberOfCountries);
-        this.age = randomNumberGenerator(15, 80);
-        this.height = randomNumberGeneratorDouble(1.3, 2.4);
-        this.weight = randomNumberGeneratorDouble(40, 200);
-        // favorite foot can vary from left or right or both
+        this.age = randomNumberGenerator(17, 46);
+        this.height = randomNumberGeneratorDouble(1.45, 2.1);
+        this.bodyType = randomNumberGenerator(1, 5);
+        if (bodyType == 1) {
+            this.weight = calculateWeightThin(height);
+        } else if (bodyType == 2) {
+            this.weight = calculateWeightFat(height);
+        } else {
+            this.weight = calculateWeightNormal(height);
+        }
         this.favoritefoot = randomNumberGenerator(0, 2) == 0 ? "Right" : randomNumberGenerator(0, 2) == 1 ? "Left" : "Both";
+        this.stats = new Stats();
+        this.specialStats = new SpecialStats();
     }
 
     public static int GetNumberOfLines(String filePath) {
@@ -43,14 +54,6 @@ public class Player {
         return -1;
     }
 
-    private int randomNumberGenerator(int min, int max) {
-        return (int) (Math.random() * (max - min) + min);
-    }
-
-    private double randomNumberGeneratorDouble(double min, double max) {
-        return (Math.random() * (max - min) + min);
-    }
-
     private String nameGenerator(String filePath, int numberOfLines) {
         int randomNumber = randomNumberGenerator(1, numberOfLines);
         String name = "";
@@ -68,18 +71,41 @@ public class Player {
         return name;
     }
 
+    public double calculateWeightThin(double height) {
+        return height * height * 22;
+    }
+
+    public double calculateWeightNormal(double height) {
+        return height * height * 25;
+    }
+
+    public double calculateWeightFat(double height) {
+        return height * height * 30;
+    }
+
     @Override
     public String toString() {
+        String bodyTypeT = "";
+        if (bodyType == 1) {
+            bodyTypeT = "Thin";
+        } else if (bodyType == 2) {
+            bodyTypeT = "Fat";
+        } else {
+            bodyTypeT = "Normal";
+        }
         return String.format("""
                         Name : %s
                         Country : %s
                         Age : %d years
+                        Body Type : %s
                         Height : %.2f m
                         Weight : %.2f kg
                         Favorite Foot : %s
-                        Stats : %s
-                        Special Stats : %s
+                        ----------------------Stats-----------------------
+                        %s
+                        ------------------Special Stats-------------------
+                        %s
                         """,
-                name, country, age, height, weight, favoritefoot, stats, specialStats);
+                name, country, age, bodyTypeT, height, weight, favoritefoot, stats, specialStats);
     }
 }

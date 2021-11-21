@@ -8,10 +8,8 @@ public class App {
         int numberOfNames = Player.GetNumberOfLines(namesPath);
         int numberOfSurnames = Player.GetNumberOfLines(surnamesPath);
         int numberOfCountries = Player.GetNumberOfLines(countriesPath);
-        for (int i = 0; i < 100; i++) {
-            System.out.println(new Player(namesPath, numberOfNames, surnamesPath, numberOfSurnames, countriesPath, numberOfCountries));
-            System.out.println("----------------------------------------");
-        }
+        Player player = new Player(namesPath, numberOfNames, surnamesPath, numberOfSurnames, countriesPath, numberOfCountries);
+        System.out.println(player);
 
     }
 }

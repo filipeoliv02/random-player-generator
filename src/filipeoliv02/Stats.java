@@ -1,6 +1,7 @@
 package filipeoliv02;
 
 import static filipeoliv02.Utils.randomNumberGenerator;
+import static filipeoliv02.Utils.generateStat;
 
 public class Stats {
     public int Attack;
@@ -36,30 +37,30 @@ public class Stats {
     public Stats() {
         this.Attack = randomNumberGenerator(1, 99);
         this.Defense = randomNumberGenerator(1, 99);
-        this.BodyBalance = randomNumberGenerator(1, 99);
-        this.Stamina = randomNumberGenerator(1, 99);
-        this.TopSpeed = randomNumberGenerator(1, 99);
-        this.Acceleration = randomNumberGenerator(1, 99);
-        this.Response = randomNumberGenerator(1, 99);
-        this.Agility = randomNumberGenerator(1, 99);
-        this.DribbleAccuracy = randomNumberGenerator(1, 99);
-        this.DribbleSpeed = randomNumberGenerator(1, 99);
-        this.ShortPassAccuracy = randomNumberGenerator(1, 99);
-        this.ShortPassSpeed = randomNumberGenerator(1, 99);
-        this.LongPassAccuracy = randomNumberGenerator(1, 99);
-        this.LongPassSpeed = randomNumberGenerator(1, 99);
-        this.ShotAccuracy = randomNumberGenerator(1, 99);
-        this.ShotPower = randomNumberGenerator(1, 99);
-        this.ShotTechnique = randomNumberGenerator(1, 99);
-        this.FreeKickAccuracy = randomNumberGenerator(1, 99);
-        this.Swerve = randomNumberGenerator(1, 99);
-        this.Header = randomNumberGenerator(1, 99);
-        this.Jump = randomNumberGenerator(1, 99);
-        this.Technique = randomNumberGenerator(1, 99);
-        this.Mentality = randomNumberGenerator(1, 99);
-        this.KeeperSkills = randomNumberGenerator(1, 99);
-        this.Teamwork = randomNumberGenerator(1, 99);
-        this.Condition = randomNumberGenerator(1, 99);
+        this.BodyBalance = generateStat();
+        this.Stamina = generateStat();
+        this.TopSpeed = generateStat();
+        this.Acceleration = generateStat();
+        this.Response = generateStat();
+        this.Agility = generateStat();
+        this.DribbleAccuracy = generateStat();
+        this.DribbleSpeed = generateStat();
+        this.ShortPassAccuracy = generateStat();
+        this.ShortPassSpeed = generateStat();
+        this.LongPassAccuracy = generateStat();
+        this.LongPassSpeed = generateStat();
+        this.ShotAccuracy = generateStat();
+        this.ShotPower = generateStat();
+        this.ShotTechnique = generateStat();
+        this.FreeKickAccuracy = generateStat();
+        this.Swerve = generateStat();
+        this.Header = generateStat();
+        this.Jump = generateStat();
+        this.Technique = generateStat();
+        this.Mentality = generateStat();
+        this.KeeperSkills = generateStat();
+        this.Teamwork = generateStat();
+        this.Condition = generateStat();
         this.WeakFootAccuracy = randomNumberGenerator(1, 8);
         this.WeakFootFrequency = randomNumberGenerator(1, 8);
     }

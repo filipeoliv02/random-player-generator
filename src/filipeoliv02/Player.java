@@ -71,6 +71,7 @@ public class Player {
         return name;
     }
 
+    
     public double calculateWeightThin(double height) {
         return height * height * 22;
     }

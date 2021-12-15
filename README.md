@@ -1,3 +1,5 @@
+# PES 2006 Player Random Generator
+
 # Attack:
 
 Attack is the danger level of a player whenever he is in offensive play. Players with high levels of attack will know the best course of action to take in whatever situation he faces. Attack's significance as an attribute is amplified by other stats, which will dictate his style of play. These traits pertain to the player's role. For example, a playmaker will be better at dictating play and recognizing chances, while a striker will become more potent, and adept at overcoming whatever obstacles are in his way.

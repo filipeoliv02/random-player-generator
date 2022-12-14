@@ -1,4 +1,4 @@
-# PES 2006 Player Random Generator
+# PES 2006 Random Player Generator
 
 # Attack:
 

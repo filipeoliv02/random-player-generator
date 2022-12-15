@@ -1,7 +1,7 @@
-package filipeoliv02;
+package main.java;
 
-import static filipeoliv02.Utils.randomNumberGenerator;
-import static filipeoliv02.Utils.generateStat;
+import static main.java.Utils.generateStat;
+import static main.java.Utils.randomNumberGenerator;
 
 public class Stats {
     public int Attack;
@@ -69,35 +69,35 @@ public class Stats {
     @Override
     public String toString() {
         return String.format("""
-                                Attack: %d
-                                Defense: %d
-                                Body Balance: %d
-                                Stamina: %d
-                                Top Speed: %d
-                                Acceleration: %d
-                                Response: %d
-                                Agility: %d
-                                Dribble Accuracy: %d
-                                Dribble Speed: %d
-                                Short Pass Accuracy: %d
-                                Short Pass Speed: %d
-                                Long Pass Accuracy: %d
-                                Long Pass Speed: %d
-                                Shot Accuracy: %d
-                                Shot Power: %d
-                                Shot Technique: %d
-                                Free Kick Accuracy: %d
-                                Swerve: %d
-                                Header: %d
-                                Jump: %d
-                                Technique: %d
-                                Mentality: %d
-                                Keeper Skills: %d
-                                Teamwork: %d
-                                Condition: %d
-                                Weak Foot Accuracy: %d
-                                Weak Foot Frequency: %d
-                                """,
+                        Attack: %d
+                        Defense: %d
+                        Body Balance: %d
+                        Stamina: %d
+                        Top Speed: %d
+                        Acceleration: %d
+                        Response: %d
+                        Agility: %d
+                        Dribble Accuracy: %d
+                        Dribble Speed: %d
+                        Short Pass Accuracy: %d
+                        Short Pass Speed: %d
+                        Long Pass Accuracy: %d
+                        Long Pass Speed: %d
+                        Shot Accuracy: %d
+                        Shot Power: %d
+                        Shot Technique: %d
+                        Free Kick Accuracy: %d
+                        Swerve: %d
+                        Header: %d
+                        Jump: %d
+                        Technique: %d
+                        Mentality: %d
+                        Keeper Skills: %d
+                        Teamwork: %d
+                        Condition: %d
+                        Weak Foot Accuracy: %d
+                        Weak Foot Frequency: %d
+                        """,
                 this.Attack, this.Defense, this.BodyBalance, this.Stamina, this.TopSpeed, this.Acceleration, this.Response, this.Agility, this.DribbleAccuracy, this.DribbleSpeed, this.ShortPassAccuracy, this.ShortPassSpeed, this.LongPassAccuracy, this.LongPassSpeed, this.ShotAccuracy, this.ShotPower, this.ShotTechnique, this.FreeKickAccuracy, this.Swerve, this.Header, this.Jump, this.Technique, this.Mentality, this.KeeperSkills, this.Teamwork, this.Condition, this.WeakFootAccuracy, this.WeakFootFrequency);
     }
 

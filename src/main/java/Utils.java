@@ -28,26 +28,26 @@ public class Utils {
         };
     }
 
-    public static int[] specialStatChooser(int numberOfAttributes) {
+    public static SpecialStatsEnum[] specialStatChooser() {
         Random rand = new Random();
         int numToChoose = rand.nextInt(3);
 
         if (numToChoose == 0) {
 
-            return new int[]{};
+            return new SpecialStatsEnum[]{};
         }else if (numToChoose == 1) {
-            int chosenNumber = rand.nextInt(numberOfAttributes);
+            int chosenNumber = rand.nextInt(SpecialStatsEnum.values().length);
 
-            return new int[]{chosenNumber};
+            return new SpecialStatsEnum[]{SpecialStatsEnum.values()[chosenNumber]};
         }else {
-            int chosenNumber = rand.nextInt(numberOfAttributes);
+            int chosenNumber = rand.nextInt(SpecialStatsEnum.values().length);
             int chosenNumber1;
 
             do {
-                chosenNumber1 = rand.nextInt(numberOfAttributes);
+                chosenNumber1 = rand.nextInt(SpecialStatsEnum.values().length);
             } while (chosenNumber == chosenNumber1);
 
-            return new int[]{chosenNumber, chosenNumber1};
+            return new SpecialStatsEnum[]{SpecialStatsEnum.values()[chosenNumber], SpecialStatsEnum.values()[chosenNumber1]};
         }
     }
 }

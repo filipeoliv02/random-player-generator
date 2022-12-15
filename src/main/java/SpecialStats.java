@@ -49,19 +49,20 @@ public class SpecialStats {
 
     @Override
     public String toString() {
-        //sb
         var sb = new StringBuilder();
+
         Field[] fields = getClass().getDeclaredFields();
+
         for (Field field : fields) {
             try {
                 if (field.getType() == boolean.class && field.getBoolean(this)) {
-                    sb.append(field.getName());
+                    sb.append(field.getName()).append("\n");
                 }
             } catch (IllegalAccessException e) {
                 throw new RuntimeException(e);
             }
         }
-        return sb.toString();
 
+        return sb.toString();
     }
 }

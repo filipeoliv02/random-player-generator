@@ -5,8 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
-import static main.java.Utils.randomNumberGenerator;
-import static main.java.Utils.randomNumberGeneratorDouble;
+import static main.java.Utils.*;
 
 public class Player {
     public String name;
@@ -15,7 +14,7 @@ public class Player {
     public int bodyType;
     public double height;
     public double weight;
-    public String favoritefoot;
+    public String favoriteFoot;
     public Stats stats;
     public SpecialStats specialStats;
 
@@ -32,9 +31,11 @@ public class Player {
         }else {
             this.weight = calculateWeightNormal(height);
         }
-        this.favoritefoot = randomNumberGenerator(0, 2) == 0 ? "Right" : randomNumberGenerator(0, 2) == 1 ? "Left" : "Both";
+        this.favoriteFoot = randomNumberGenerator(0, 2) == 0 ? "Right" : randomNumberGenerator(0, 2) == 1 ? "Left" : "Both";
         this.stats = new Stats();
-        this.specialStats = new SpecialStats();
+
+        //Special stats
+        this.specialStats = new SpecialStats(specialStatChooser());
     }
 
     public static int GetNumberOfLines(String filePath) {
@@ -107,6 +108,6 @@ public class Player {
                         ------------------Special Stats-------------------
                         %s
                         """,
-                name, country, age, bodyTypeT, height, weight, favoritefoot, stats, specialStats);
+                name, country, age, bodyTypeT, height, weight, favoriteFoot, stats, specialStats);
     }
 }

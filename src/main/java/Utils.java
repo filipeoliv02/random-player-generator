@@ -38,7 +38,7 @@ public class Utils {
         }else if (numToChoose == 1) {
             int chosenNumber = rand.nextInt(numberOfAttributes);
 
-            return new int[]{chosenNumber - 1};
+            return new int[]{chosenNumber};
         }else {
             int chosenNumber = rand.nextInt(numberOfAttributes);
             int chosenNumber1;
@@ -47,7 +47,7 @@ public class Utils {
                 chosenNumber1 = rand.nextInt(numberOfAttributes);
             } while (chosenNumber == chosenNumber1);
 
-            return new int[]{chosenNumber - 1, chosenNumber1 - 1};
+            return new int[]{chosenNumber, chosenNumber1};
         }
     }
 }

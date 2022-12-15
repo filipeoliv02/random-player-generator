@@ -1,7 +1,7 @@
-package filipeoliv02;
+package main.java;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException {
         String namesPath = "lib/names.txt";
         String surnamesPath = "lib/surnames.txt";
         String countriesPath = "lib/countries.txt";

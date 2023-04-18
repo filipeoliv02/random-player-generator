@@ -2,7 +2,7 @@
 
 ## Description:
 
-Generates random players with random stats 
+Generates random players with random stats and names 
 
 # Attack:
 

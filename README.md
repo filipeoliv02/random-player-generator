@@ -4,120 +4,120 @@
 
 Generates random players with random stats and names 
 
-# Attack:
+### Attack:
 
 Attack is the danger level of a player whenever he is in offensive play. Players with high levels of attack will know the best course of action to take in whatever situation he faces. Attack's significance as an attribute is amplified by other stats, which will dictate his style of play. These traits pertain to the player's role. For example, a playmaker will be better at dictating play and recognizing chances, while a striker will become more potent, and adept at overcoming whatever obstacles are in his way.
 
 
-# Defense
+### Defense
 
 Defense is Attack's counterpart. Rather than a player's ability to know the correct action while on the ball, Defense is the player's ability to defend while off the ball. A player with a high Defense rating will be more competent in his defensive duties and will have a better chance of knowing the best course of action in whatever situation that may arise. One key aspect of Defense relates to a player's aptitude at dispossessing others. While a player with a high Defense rating will be more successful at this, a player with a low Defense rating will not be. However, the Defense stat is not all-encompassing of a player's overall defensive abilities, as other stats play a large part in dictating a player's effectiveness.
 
 
-# Body Balance
+### Body Balance
 
 Body Balance essentially is a player's strength. Players with high Body Balance are more able to knock the opposition off the ball and to withstand tackles and other physical confrontations. A defender with high Body Balance would be more adept at using brute force to deal with the oppositions' attacks, and to overpower them and win the ball in that manner. Likewise, an offensive player with high Body Balance would be much more difficult to knock off the ball and more resilient in physical confrontations.
 
 
-# Stamina
+### Stamina
 
 Stamina represents a player's level of energy. A player with an excess of Stamina will be able to take part in more, such as running to contribute to the defense or offense. A player with lower Stamina will need to play more conservitively with their energy (less running/less activity that they don't actually need to do).
 
 
-# Top Speed
+### Top Speed
 
 Top Speed is a player's top running speed while off the ball.
 
 
-# Acceleration
+### Acceleration
 
 Acceleration indicates how quickly a player is able to reach their Top Speed.
 
 
-# Response
+### Response
 
 Response essentially equates to a player's reflexes. Defensively, a player with high Response is more likely to collect loose balls and to intercept passes. Offensively, high Response players are more likely to get on the end of spilled chances/loose balls and crosses, etc. High Response is a very desireable stat for poacher-type players.
 
 A by-product of having high Response on defensive players is that it causes players to move to the ball more. In essence, a defensive player with high Response becomes more aggresive in seeking out the ball.
 
 
-# Agility
+### Agility
 
 Agility determines how fast a player is at moving his body. A player with high Agility is more adept at making movements, such as turns, quickly. Agility is not, however, how well they move or how intelligent/skilled their movements are. Agility is related solely to the speed of their movements.
 
 
-# Dribble Acuracy
+### Dribble Acuracy
 
 Dribble Acuracy indicates the level of control a player has with the ball at his feet while dribbling.
 
 
-# Dribble Speed
+### Dribble Speed
 
 Dribble Speed is how much speed a player is able to maintain while on the ball.
 
 
-# Short Pass Accuracy
+### Short Pass Accuracy
 
 Short Pass Accuracy indicates how much accuracy a player has in his grounded passes.
 
 
-# Short Pass Speed
+### Short Pass Speed
 
 Short Pass Speed dictates the speed a player can put on his grounded passes. It also has the additional effect of giving players more range in their passes. This is a very important attibute to players who make deep, grounded through balls (30 yards or so).
 
 
-# Long Pass Accuracy
+### Long Pass Accuracy
 
 Long Pass Accuracy indicates how much accuracy a player has in his arial passes.
 
 
-# Long Pass Speed
+### Long Pass Speed
 
 Long Pass Speed represents the amount of power a player can put into his arial passes.
 
 
-# Shot Accuracy
+### Shot Accuracy
 
 Shot Accuracy relates to the level of accuracy a player has while shooting. Players with high Shot Accuracy will be more able to shoot the ball into hard-to-reach places for the keeper, such as the corners. High Shot Accuracy makes a player more likely to score.
 
 
-# Shot Power
+### Shot Power
 
 Shot Power is the level of power a player puts into his shots.
 
 
-# Shot Technique
+### Shot Technique
 
 Shot Technique is a player's ability to shoot from awkward positions and angles.
 
 
-# Free Kick Accuracy
+### Free Kick Accuracy
 
 Free Kick Accuracy indicates a player's level of accuracy when taking free kicks.
 
 
-# Swerve
+### Swerve
 
 Swerve determines how much curve a player can apply to a free kick or corner. One thing that you might not realize, however, is that this value also dictates how well a player can make the ball drop after it clears the defensive wall. A player with high Free Kick Accuracy but poor Swerve may be able to clear the wall and send his kick in the right direction from sub-25 yard distances, but the ball will rarely dip sufficiently to trouble the goalkeeper.
 
 
-# Header
+### Header
 
 Header Accuracy is the level of accuracy a player has when hitting the ball with his head.
 
-# Jump
+### Jump
 
 Jump indicates how high a player can jump to challenge for aerial balls.
 
-# Technique
+### Technique
 
 Technique represents how good a player is at trapping the ball. Essentially, how good their first touch is. Players with high levels of technique, will be able to trap difficult balls with ease.
 
-# Mentality
+### Mentality
 
 Mentality is how well a player deals with adverse situations. Mentality also effects Stamina. Players with high Mentality will not be as effected by depleted levels of Stamina.
 
-# Teamwork
+### Teamwork
 
 Teamwork relates to supportive off the ball movement. A player with high Teamwork (Xavi, for example) supports their teammates by moving around the field, making themselves available for potentional passes. Additionally, in the case of defenders, Teamwork effects a player's ability to work with his defensive teammates as a unit.
 
@@ -126,7 +126,7 @@ Teamwork is not, despite previous beliefs, at all related to how good of a playm
 
 
 
-Special Abilities Explanations:
+## Special Abilities Explanations:
 
 
 ★ Dribbling:

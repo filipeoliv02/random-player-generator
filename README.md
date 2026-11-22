@@ -1,222 +1,136 @@
-# PES 2006 Random Player Generator
-
-## Description:
-
-Generates random players with random stats and names 
-
-### Attack:
-
-Attack is the danger level of a player whenever he is in offensive play. Players with high levels of attack will know the best course of action to take in whatever situation he faces. Attack's significance as an attribute is amplified by other stats, which will dictate his style of play. These traits pertain to the player's role. For example, a playmaker will be better at dictating play and recognizing chances, while a striker will become more potent, and adept at overcoming whatever obstacles are in his way.
-
-
-### Defense
-
-Defense is Attack's counterpart. Rather than a player's ability to know the correct action while on the ball, Defense is the player's ability to defend while off the ball. A player with a high Defense rating will be more competent in his defensive duties and will have a better chance of knowing the best course of action in whatever situation that may arise. One key aspect of Defense relates to a player's aptitude at dispossessing others. While a player with a high Defense rating will be more successful at this, a player with a low Defense rating will not be. However, the Defense stat is not all-encompassing of a player's overall defensive abilities, as other stats play a large part in dictating a player's effectiveness.
-
-
-### Body Balance
-
-Body Balance essentially is a player's strength. Players with high Body Balance are more able to knock the opposition off the ball and to withstand tackles and other physical confrontations. A defender with high Body Balance would be more adept at using brute force to deal with the oppositions' attacks, and to overpower them and win the ball in that manner. Likewise, an offensive player with high Body Balance would be much more difficult to knock off the ball and more resilient in physical confrontations.
-
-
-### Stamina
-
-Stamina represents a player's level of energy. A player with an excess of Stamina will be able to take part in more, such as running to contribute to the defense or offense. A player with lower Stamina will need to play more conservitively with their energy (less running/less activity that they don't actually need to do).
-
-
-### Top Speed
-
-Top Speed is a player's top running speed while off the ball.
-
-
-### Acceleration
-
-Acceleration indicates how quickly a player is able to reach their Top Speed.
-
-
-### Response
-
-Response essentially equates to a player's reflexes. Defensively, a player with high Response is more likely to collect loose balls and to intercept passes. Offensively, high Response players are more likely to get on the end of spilled chances/loose balls and crosses, etc. High Response is a very desireable stat for poacher-type players.
-
-A by-product of having high Response on defensive players is that it causes players to move to the ball more. In essence, a defensive player with high Response becomes more aggresive in seeking out the ball.
-
-
-### Agility
-
-Agility determines how fast a player is at moving his body. A player with high Agility is more adept at making movements, such as turns, quickly. Agility is not, however, how well they move or how intelligent/skilled their movements are. Agility is related solely to the speed of their movements.
-
-
-### Dribble Acuracy
-
-Dribble Acuracy indicates the level of control a player has with the ball at his feet while dribbling.
-
-
-### Dribble Speed
-
-Dribble Speed is how much speed a player is able to maintain while on the ball.
-
-
-### Short Pass Accuracy
-
-Short Pass Accuracy indicates how much accuracy a player has in his grounded passes.
-
-
-### Short Pass Speed
-
-Short Pass Speed dictates the speed a player can put on his grounded passes. It also has the additional effect of giving players more range in their passes. This is a very important attibute to players who make deep, grounded through balls (30 yards or so).
-
-
-### Long Pass Accuracy
-
-Long Pass Accuracy indicates how much accuracy a player has in his arial passes.
-
-
-### Long Pass Speed
-
-Long Pass Speed represents the amount of power a player can put into his arial passes.
-
-
-### Shot Accuracy
-
-Shot Accuracy relates to the level of accuracy a player has while shooting. Players with high Shot Accuracy will be more able to shoot the ball into hard-to-reach places for the keeper, such as the corners. High Shot Accuracy makes a player more likely to score.
-
-
-### Shot Power
-
-Shot Power is the level of power a player puts into his shots.
-
-
-### Shot Technique
-
-Shot Technique is a player's ability to shoot from awkward positions and angles.
-
-
-### Free Kick Accuracy
-
-Free Kick Accuracy indicates a player's level of accuracy when taking free kicks.
-
-
-### Swerve
-
-Swerve determines how much curve a player can apply to a free kick or corner. One thing that you might not realize, however, is that this value also dictates how well a player can make the ball drop after it clears the defensive wall. A player with high Free Kick Accuracy but poor Swerve may be able to clear the wall and send his kick in the right direction from sub-25 yard distances, but the ball will rarely dip sufficiently to trouble the goalkeeper.
-
-
-### Header
-
-Header Accuracy is the level of accuracy a player has when hitting the ball with his head.
-
-### Jump
-
-Jump indicates how high a player can jump to challenge for aerial balls.
-
-### Technique
-
-Technique represents how good a player is at trapping the ball. Essentially, how good their first touch is. Players with high levels of technique, will be able to trap difficult balls with ease.
-
-### Mentality
-
-Mentality is how well a player deals with adverse situations. Mentality also effects Stamina. Players with high Mentality will not be as effected by depleted levels of Stamina.
-
-### Teamwork
-
-Teamwork relates to supportive off the ball movement. A player with high Teamwork (Xavi, for example) supports their teammates by moving around the field, making themselves available for potentional passes. Additionally, in the case of defenders, Teamwork effects a player's ability to work with his defensive teammates as a unit.
-
-Teamwork is not, despite previous beliefs, at all related to how good of a playmaker a player is.
-
-
-
-
-## Special Abilities Explanations:
-
-
-★ Dribbling:
-
-"Player tends to dribble (when AI controlled)." --> Description changed a bit, but completely the same as always. An obvious one, the description says it all.
-
-★ Tactical Dribble:
-
-"The player will try to hold on to the ball by dribbling." --> Description changed a bit, but generally the same. It changed the slightest in game terms, but mainly on the better, the player is now more capable of holding up the ball properly and waits for a player to come near to lay it off for him.
-
-★ Positioning:
-
-"Improves positioning when receiving passes and crosses." --> Description changed completely, and player behaves differently than in prior versions of the game. The Positioning star from prior versions of the game has enhanced a players positional sense while in the box. The "new" version of Positioning makes a player come a bit backwards (withdraws a bit from the defensive line) to receive a pass when he's not in the box (useful for Target Men) and enhances the players ability to make himself open for a pass thus removing the reason to increase a players TW stat to prevent him from passing the ball too much as a forward. The behaviour in the box remains the same as in prior versions of the game. Also when a player who has a Marauding (in a lesser degree and success rate is lower) and/or Line Breaker gains a tendency to come a bit deeper to receive a pass and play a "one-two" pass with a player nearby and then attack the defensive line with an aggressive run.
-
-★ Marauding:
-
-"The player will make frequent runs to try and get behind the opposition defence." --> Former ★ Reaction. Description has changed a bit, but completely the same as always. It makes a player attack the defensive line with and aggressive forward run. On midfielders, it makes them generally arrive late in the box looking for a rebound or an open shot on goal.
-
-★ Playmaker:
-
-"Improves the team's off the ball movement when in possession." --> Description change a bit, a player with this star behaves slightly different than in prior versions. The Star now acts like a version of the []Talisman card, driving the whole team forward and improving their positional sense (enhancing TW) so that they can make themselves better at finding space to receive a pass and enhances the general movement of the team's attacking flow. Apart from that, it enhances a players passing skills slightly and a player's tendency to pass the ball.
-
-★ Passing:
-
-"When on the ball, other players make intelligent runs to receive passes in better positions." --> Description changed a bit, but generally the same. The Passing star encourages a player to attempt more through balls than he usually would and makes players infront of him to make better forward runs at attacking the backline, generally enhancing their positional play. It doesn't enhance passing skills.
-
-★ Goal Scorer:
-
-"Improves positioning and responsiveness to passes leading to more goals." --> Former ★ Scoring. Description has completely changed and so has the players behaviour. The Star now has some characteristics of the prior version of the Positioning Star and solely enhances a players movement inside the box and improving his "poaching" instincts and the general ability to pounce on rebounds and react faster on loose balls in the box. It doesn't enhance shooting abilities inside the box and near the box like it did in prior versions of the game.
-
-★ 1-on-1 Scoring:
-
-"Easier to score when 1-on-1 with the goalkeeper." --> Description changed a bit, but completely the same as always. An obvious one, the description says it all.
-
-★ Target Man:
-
-"Improves the ability to hold the ball up when playing up front." --> Description changed a bit, but completely the same as always. The Star gives a slight boost to a forwards BB when trying to hold the ball with his back against an opposing player and makes a player play with his back facing the goal. IMPORTANT! This Star does not make a player act like a "Target Man" in-game, it just makes a player to play with his back towards the goal. To recreate a "Target Man" a player must have assigned the following stars: *Positioning (makes the forward more open to a pass when not in the box), *Target Man (makes the forward play with his back facing the goal, holding up the ball until a player passes nearby for a lay off) and *Tactical Dribble (prevent the forward from venturing forward with the ball).
-
-★ Line Breaker:
-
-"Improves the timing at which the player makes a run off the last defender." --> Former ★ Lines. Description changed a bit, but generally the same. The Star encourages the player to constantly attempt a run off the last defender and enhances the players timing of the run so that he can be better at beating the offside trap.
-
-★ Long Shots:
-
-"Improves accuracy on long ranges strikes." --> Former ★ Middle Shooting. Description changed a bit. The Star enhances a players accuracy on shots from outside the box and also gives a vicious dipping effect (topspin) on their shots. Also the Star encourages a player to shoot more from long range.
-
-★ Wide Player:
-
-"Player prefers to play out wide." --> Former ★ Side. Description changed a bit, but completely the same as always. An obvious one, the description says it all.
-
-★ Central Player:
-
-"Player prefers to play down the middle." --> Former ★ Centre. Description changed a bit, but completely the same as always. An obvious one, the description says it all.
-
-★ PK Taker:
-
-"Makes the player a better penalty taker." --> Former ★ Penalties. Description changed a bit, but completely the same as always. The star makes it extremely hard for a player to miss the frame of the goal, but it doesn't enhance the chance of the player to score or improve his accuracy on penalties.
-
-★ 1-touch Play:
-
-"Improves accuracy on one-touch play." --> Former ★ 1-touch Pass. Description changed a bit, but completely the same as always. The star enhances a players passing and shooting from first touches on the ball.
-
-★ Outside Curve:
-
-"Improves accuracy when using the outside of the foot." --> Former ★ Outside. Description changed a bit, but completely the same as always. An obvious one, the description says it all.
-
-★ Man Marking:
-
-"Stays tight on the opponent when marking." --> Former ★ Marking. Description changed a bit, but completely the same as always. The Star enhances a players defensive ability at guarding his man/designated spot (depending on the previously set tactic "Man Marking" or "Zonal Marking"), anyways a player with this Star will be better at keeping his marker at bay and sticking most of times on him like a fly on sh*t.
-
-★ Sliding:
-
-"Reduces the risk of conceding fouls when slide-tackling." --> Description changed a bit, but completely the same. An obvious one, the description says it all.
-
-★ Covering:
-
-"Improves the ability to cover for other defenders who have been passed." --> Description changed a bit, but completely the same. An obvious one, the description says it all.
-
-★ DF Leader:
-
-"Improves command of the backline, making offside traps more effective." --> Description changed a bit, but completely the same. An obvious one, description says it all.
-
-★ Penalty Stopper:
-
-"Improves chances of saving penalties." --> Description changed a bit, but completely the same. An obvious one, description says it all.
-
-★ 1-on-1 Keeper:
-
-"Improves response to close range shots making it harder for the opposition to score when one-on-one." --> Description changed a bit, but completely the same. An obvious one, description says it all.
-
-★ Long throw:
-
-"Improves the range on long throws." --> Description changed a bit, but generally the same. An obvious one, description says it all.
+# Random Player Generator
+
+[![CI](https://github.com/filipeoliv02/random-player-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/filipeoliv02/random-player-generator/actions/workflows/ci.yml)
+
+A small Java command-line tool that makes up random football players. Each player gets a name,
+nationality, age, body type, height, weight, preferred foot, 28 numeric attributes and up to two
+special abilities. The attribute set is modelled on classic mid-2000s football games (PES 2006 era).
+
+Pass a seed and you get the same players every time, which is handy for tests, demos or sharing a
+"squad".
+
+## Algorithms & techniques demonstrated
+
+Source files live in `src/main/java/io/github/filipeoliv02/playergen/` (abbreviated `…/` below).
+
+| Technique | What it is | How it is applied here | Where |
+|-----------|------------|------------------------|-------|
+| Weighted random selection (discrete distribution) | Draw an integer uniformly from a range sized to the total weight and map sub-ranges to outcomes. | `weightedStat` draws from `[0, 30)` and maps 10/8/6/4/2 slots to the 50s…90s bands, then adds a uniform offset 0–9. Body type (1:2:1) and foot (2:1:1) use the same idea with 4 slots. O(1) per draw, exact probabilities, no floating point. | […/PlayerGenerator.java](src/main/java/io/github/filipeoliv02/playergen/PlayerGenerator.java) |
+| Two-stage sampling | Pick a bucket by weight, then sample uniformly inside it. | Produces a skewed distribution over 50–99 where every value is still reachable (verified by a test that sees all 50 values). | […/PlayerGenerator.java](src/main/java/io/github/filipeoliv02/playergen/PlayerGenerator.java) |
+| Uniform sampling with inclusive bounds | `nextInt(min, max + 1)` so both ends are reachable. | Used for age, attack/defense and weak-foot stats; fixes an off-by-one in the original version (regression tests check the upper bounds are hit). | […/PlayerGenerator.java](src/main/java/io/github/filipeoliv02/playergen/PlayerGenerator.java) |
+| Sampling without replacement (rejection) | Draw, discard duplicates, repeat. | Special abilities: 0–2 distinct picks out of 23. With k ≪ n the expected number of retries is negligible; for large k a partial Fisher–Yates shuffle would be the better choice. | […/PlayerGenerator.java](src/main/java/io/github/filipeoliv02/playergen/PlayerGenerator.java) |
+| Seeded PRNG via dependency injection | Inject the `RandomGenerator` instead of creating one internally. | `PlayerGenerator` takes any `RandomGenerator`; the CLI passes `new java.util.Random(seed)`, whose LCG algorithm is fully specified, so a seed reproduces the same players on any JDK. Tests use fixed seeds for determinism. | […/PlayerGenerator.java](src/main/java/io/github/filipeoliv02/playergen/PlayerGenerator.java), […/App.java](src/main/java/io/github/filipeoliv02/playergen/App.java) |
+| Immutable records with validating compact constructors | Java `record`s that check invariants and take defensive copies. | `Player`, `Stats` and `NameData` reject nulls / empty lists / out-of-range values and wrap collections with `List.copyOf` or an unmodifiable map, so a constructed object is always valid. | […/Player.java](src/main/java/io/github/filipeoliv02/playergen/Player.java), […/Stats.java](src/main/java/io/github/filipeoliv02/playergen/Stats.java), […/NameData.java](src/main/java/io/github/filipeoliv02/playergen/NameData.java) |
+| `EnumMap` | Array-backed map keyed by enum ordinal. | Attribute values are stored in an `EnumMap`: O(1) access, compact, and iteration follows declaration order, which gives a stable display order for free. | […/Stats.java](src/main/java/io/github/filipeoliv02/playergen/Stats.java) |
+| Data-driven enums | Enums that carry their own parameters and behaviour. | Each `Attribute` holds its `Scale` (range + distribution); `BodyType` holds a target BMI and computes weight = height² × BMI. Generation logic switches on the scale instead of hard-coding 28 cases. | […/Attribute.java](src/main/java/io/github/filipeoliv02/playergen/Attribute.java), […/BodyType.java](src/main/java/io/github/filipeoliv02/playergen/BodyType.java) |
+| Bounded argument parsing | Hand-written parser that validates every value and range. | `Options.parse` handles short/long flags, missing values, non-numeric input and `--count` limited to 1–10000; errors map to exit code 2. `run` takes `PrintStream`s so it is testable without spawning a process. | […/App.java](src/main/java/io/github/filipeoliv02/playergen/App.java) |
+| Classpath resource loading | Read bundled data with an explicit charset. | Word lists are read as UTF-8 from the jar (works from any directory), stripped and filtered with streams; missing resources fail with a clear message. | […/NameData.java](src/main/java/io/github/filipeoliv02/playergen/NameData.java) |
+| Statistical and regression tests | Assert distribution properties over large seeded samples. | Tests check band frequencies within ±1%, full range coverage, inclusive bounds, no duplicate abilities, and seed reproducibility. | [PlayerGeneratorTest.java](src/test/java/io/github/filipeoliv02/playergen/PlayerGeneratorTest.java) |
+
+## Sample output
+
+```text
+$ java -jar target/random-player-generator.jar --seed 42
+Name : Isidore Cain
+Country : North Korea
+Age : 32 years
+Body Type : Fat
+Height : 1.65 m
+Weight : 81.74 kg
+Favorite Foot : Left
+----------------------Stats-----------------------
+Attack: 44
+Defense: 84
+Body Balance: 52
+Stamina: 52
+Top Speed: 82
+...
+Weak Foot Accuracy: 3
+Weak Foot Frequency: 8
+------------------Special Stats-------------------
+⭐ Tactical Dribble
+```
+
+## Requirements
+
+- Java 21 or newer
+- Maven 3.9 or newer (only needed to build)
+
+## Build, test and run
+
+```bash
+mvn verify                                   # compile, run the tests, build target/random-player-generator.jar
+java -jar target/random-player-generator.jar # one random player
+java -jar target/random-player-generator.jar --count 11 --seed 2006   # a reproducible XI
+java -jar target/random-player-generator.jar --help
+```
+
+The word lists are bundled inside the jar, so you can run it from any directory.
+
+### No local JDK? Use Docker
+
+```bash
+docker run --rm -v "$PWD":/src -w /src maven:3-eclipse-temurin-21 mvn -B verify
+docker run --rm -v "$PWD/target":/app eclipse-temurin:21-jre java -jar /app/random-player-generator.jar -n 3
+```
+
+### Options
+
+| Option | Description |
+|---|---|
+| `-n`, `--count N` | Number of players to generate (1–10000, default 1) |
+| `-s`, `--seed S` | 64-bit seed. The same seed gives the same output on any JDK |
+| `-h`, `--help` | Show usage |
+
+Exit code `2` means invalid arguments.
+
+## How players are generated
+
+| Property | Rule |
+|---|---|
+| Name | Random first name + random surname from `src/main/resources/data/` |
+| Country | Random entry from `countries.txt` |
+| Age | 17–45 |
+| Height | 1.45–2.10 m |
+| Body type and weight | Thin (25%, BMI 22), Normal (50%, BMI 25), Fat (25%, BMI 30); weight = height² × BMI |
+| Favourite foot | Right 50%, Left 25%, Both 25% |
+| Attack, Defense | Uniform 1–99 |
+| Other attributes | 50–99, weighted towards lower values: 50s 33%, 60s 27%, 70s 20%, 80s 13%, 90s 7% |
+| Weak foot accuracy / frequency | 1–8 |
+| Special abilities | 0, 1 or 2 (equally likely), no duplicates |
+
+All ranges include both ends.
+
+## Project layout
+
+```text
+src/main/java/io/github/filipeoliv02/playergen/
+  App.java              CLI entry point and argument parsing
+  PlayerGenerator.java  All the random generation rules
+  Player.java           Immutable player record + text card
+  Stats.java            Immutable, validated attribute values
+  Attribute.java        The 28 attributes and their value scales
+  BodyType.java, Foot.java, SpecialAbility.java
+  NameData.java         Loads the word lists from the classpath (UTF-8)
+src/main/resources/data/  names.txt, surnames.txt, countries.txt
+src/test/java/...         JUnit Jupiter tests
+```
+
+## Attribute glossary
+
+- **Attack / Defense**: how well the player reads the game going forward or without the ball.
+- **Body Balance**: physical strength, staying on the ball under challenge.
+- **Stamina / Condition**: endurance over a match, and current fitness.
+- **Top Speed / Acceleration / Agility / Response**: running speed, how quickly the player gets there, how fast they turn, and their reflexes.
+- **Dribble, Short Pass, Long Pass (Accuracy / Speed)**: control and pace on the ball and in passing.
+- **Shot Accuracy / Power / Technique, Free Kick Accuracy, Swerve**: finishing and set pieces.
+- **Header / Jump**: aerial ability.
+- **Technique**: first touch and ball control.
+- **Mentality / Teamwork**: composure under pressure, and movement that supports teammates.
+- **Keeper Skills**: goalkeeping ability.
+- **Weak Foot Accuracy / Frequency**: how good the weaker foot is, and how often it gets used.
+
+## CI
+
+GitHub Actions (`.github/workflows/ci.yml`) builds and tests every push and pull request on JDK 21.
+Dependabot keeps Maven dependencies, Maven plugins and GitHub Actions up to date.

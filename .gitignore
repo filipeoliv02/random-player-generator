@@ -1,7 +1,19 @@
+# Build output
+/target/
 /out/
 /bin/
-/.vscode/
-/.idea/
-/.attach*
-/*.iml
+*.class
 
+# IDEs
+/.idea/
+*.iml
+/.vscode/
+/.attach*
+.classpath
+.project
+.settings/
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db

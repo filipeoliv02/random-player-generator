@@ -106,6 +106,27 @@ class PlayerGeneratorTest {
     }
 
     @Test
+    void weightedAliasTablesPreserveExactProbabilities() {
+        var bands = new AliasTable<>(List.of(50, 60, 70, 80, 90), new int[]{10, 8, 6, 4, 2});
+        long denominator = bands.massDenominator();
+        assertEquals(10L * 5, bands.massNumerator(0));
+        assertEquals(8L * 5, bands.massNumerator(1));
+        assertEquals(6L * 5, bands.massNumerator(2));
+        assertEquals(4L * 5, bands.massNumerator(3));
+        assertEquals(2L * 5, bands.massNumerator(4));
+        assertEquals(30L * 5, denominator);
+
+        var bodyTypes = new AliasTable<>(List.of(BodyType.THIN, BodyType.NORMAL, BodyType.FAT),
+                new int[]{1, 2, 1});
+        assertEquals(List.of(3L, 6L, 3L),
+                bodyTypes.outcomes().stream().map(type -> bodyTypes.massNumerator(bodyTypes.outcomes().indexOf(type))).toList());
+
+        var feet = new AliasTable<>(List.of(Foot.RIGHT, Foot.LEFT, Foot.BOTH), new int[]{2, 1, 1});
+        assertEquals(List.of(6L, 3L, 3L),
+                feet.outcomes().stream().map(type -> feet.massNumerator(feet.outcomes().indexOf(type))).toList());
+    }
+
+    @Test
     void specialAbilitiesAreDistinctAndAtMostTwo() {
         Set<Integer> counts = new HashSet<>();
         for (Player p : sample) {

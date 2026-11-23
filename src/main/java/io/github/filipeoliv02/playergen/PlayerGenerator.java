@@ -1,6 +1,7 @@
 package io.github.filipeoliv02.playergen;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Objects;
@@ -20,13 +21,22 @@ public final class PlayerGenerator {
     static final int MAX_SPECIAL_ABILITIES = 2;
 
     private static final SpecialAbility[] ABILITIES = SpecialAbility.values();
+    private static final AliasTable<Integer> STATIC_WEIGHTED_BANDS =
+            new AliasTable<>(List.of(50, 60, 70, 80, 90), new int[]{10, 8, 6, 4, 2});
 
     private final NameData data;
     private final RandomGenerator random;
+    private final AliasTable<Integer> weightedBands;
+    private final AliasTable<BodyType> bodyTypes;
+    private final AliasTable<Foot> feet;
 
     public PlayerGenerator(NameData data, RandomGenerator random) {
         this.data = Objects.requireNonNull(data, "data");
         this.random = Objects.requireNonNull(random, "random");
+        weightedBands = new AliasTable<>(List.of(50, 60, 70, 80, 90), new int[]{10, 8, 6, 4, 2});
+        bodyTypes = new AliasTable<>(List.of(BodyType.THIN, BodyType.NORMAL, BodyType.FAT),
+                new int[]{1, 2, 1});
+        feet = new AliasTable<>(List.of(Foot.RIGHT, Foot.LEFT, Foot.BOTH), new int[]{2, 1, 1});
     }
 
     /** Generates one player. */
@@ -69,22 +79,14 @@ public final class PlayerGenerator {
         return random.nextInt(min, max + 1);
     }
 
-    /** Thin 25%, Fat 25%, Normal 50% (same split as the original version). */
+    /** Thin 25%, Normal 50%, Fat 25%. */
     private BodyType bodyType() {
-        return switch (random.nextInt(4)) {
-            case 0 -> BodyType.THIN;
-            case 1 -> BodyType.FAT;
-            default -> BodyType.NORMAL;
-        };
+        return bodyTypes.sample(random);
     }
 
-    /** Right 50%, Left 25%, Both 25% (same split as the original version). */
+    /** Right 50%, Left 25%, Both 25%. */
     private Foot foot() {
-        return switch (random.nextInt(4)) {
-            case 0, 1 -> Foot.RIGHT;
-            case 2 -> Foot.LEFT;
-            default -> Foot.BOTH;
-        };
+        return feet.sample(random);
     }
 
     private Stats stats() {
@@ -92,7 +94,7 @@ public final class PlayerGenerator {
         for (Attribute attribute : Attribute.values()) {
             Attribute.Scale scale = attribute.scale();
             int value = switch (scale) {
-                case WEIGHTED -> weightedStat(random);
+                case WEIGHTED -> weightedBands.sample(random) + random.nextInt(10);
                 case FULL, WEAK_FOOT -> between(scale.min(), scale.max());
             };
             values.put(attribute, value);
@@ -105,26 +107,18 @@ public final class PlayerGenerator {
      * 50-59 (10/30), 60-69 (8/30), 70-79 (6/30), 80-89 (4/30), 90-99 (2/30).
      */
     static int weightedStat(RandomGenerator random) {
-        int bandStart = switch (random.nextInt(30)) {
-            case 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 -> 50;
-            case 10, 11, 12, 13, 14, 15, 16, 17 -> 60;
-            case 18, 19, 20, 21, 22, 23 -> 70;
-            case 24, 25, 26, 27 -> 80;
-            default -> 90;
-        };
-        return bandStart + random.nextInt(10);
+        return STATIC_WEIGHTED_BANDS.sample(random) + random.nextInt(10);
     }
 
     /** Zero, one or two distinct special abilities, each count equally likely. */
     private List<SpecialAbility> specialAbilities() {
         int count = random.nextInt(MAX_SPECIAL_ABILITIES + 1);
-        var chosen = new ArrayList<SpecialAbility>(count);
-        while (chosen.size() < count) {
-            SpecialAbility candidate = ABILITIES[random.nextInt(ABILITIES.length)];
-            if (!chosen.contains(candidate)) {
-                chosen.add(candidate);
-            }
+        var shuffle = new ArrayList<SpecialAbility>(ABILITIES.length);
+        Collections.addAll(shuffle, ABILITIES);
+        for (int i = 0; i < count; i++) {
+            int j = random.nextInt(ABILITIES.length - i) + i;
+            Collections.swap(shuffle, i, j);
         }
-        return chosen;
+        return List.copyOf(shuffle.subList(0, count));
     }
 }
